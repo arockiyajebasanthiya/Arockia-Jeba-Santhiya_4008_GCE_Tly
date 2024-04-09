@@ -1,8 +1,7 @@
-
 from django.urls import path
-
-from . import views
+from polls.views import index  # Import the index view function from the polls app
 
 urlpatterns = [
-	path('', views.index, name ='index'),
+    path('', index, name='index'),  # Use the index view function from the polls app
+    # Other URL patterns for the pages app
 ]
